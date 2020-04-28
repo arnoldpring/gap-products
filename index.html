@@ -1,6 +1,6 @@
 <html>
   <head>
-  <title>My Now Amazing Webpage</title>
+  <title>gap-products</title>
   <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
@@ -13,8 +13,8 @@
   <body>
     <main>
         <div class="ml-8 text-blue-500"><a href="#">Boys</a></div>
-        <section class="product flex justify-between m-4">
-            <div class="pro-images flex w-3/5">
+        <section class="product lg:flex block justify-between m-4">
+            <div class="prod-images flex lg:w-3/5 w-full">
                 <div class="slider-nav-wrap w-1/6 ml-8">
                     <div class="thumbnail w-4/5 mx-auto">
                         <div class="navpic w-4/5 mb-4"><img class="w-full" src="dist/img/pic1.jpg" alt=""></div>
@@ -43,37 +43,37 @@
                 </div>
             </div>
 
-            <div class="prod-info mx-8 mr-4 w-1/3 shadow-md px-8 h-full">
+            <div class="prod-info lg:mx-8 lg:mr-4 mx-0 mr-0 lg:w-1/3 w-full shadow-md px-8 h-max-content">
                 <div class="text-gray-700 text-2xl"><h2>Kids Graphic T-Shirt</h2></div>
                 <div class="text-gray-800 text-2xl font-bold"><span>₱695.00</span></div>
                 <div class="prod-color">
                     <p>Color: <span class="text-gray-900 text-xl font-bold">Shark Fin</span></p>
                 </div>
-                <div class="prod-icon mt-2">
-                    <ul class="flex justify-between w-4/6">
+                <div class="prod-icon w-64 mt-2">
+                    <ul class="flex justify-between">
                         <li>
-                            <div class="w-4/6"><img src="dist/img/picb1.jpg" alt="">
+                            <div class="w-4/5"><img src="dist/img/picb1.jpg" alt="">
                             </div>
                         </li>
                         <li>
-                            <div class="w-4/6"><img src="dist/img/picb2.jpg" alt=""></div>
+                            <div class="w-4/5"><img src="dist/img/picb2.jpg" alt=""></div>
                         </li>
                         <li>
-                            <div class="w-4/6"><img src="dist/img/picb3.jpg" alt=""></div>
+                            <div class="w-4/5"><img src="dist/img/picb3.jpg" alt=""></div>
                         </li>
                         <li>
-                            <div class="w-4/6"><img src="dist/img/picb4.jpg" alt=""></div>
+                            <div class="w-4/5"><img src="dist/img/picb4.jpg" alt=""></div>
                         </li>
                         <li>
-                            <div class="w-4/6"><img src="dist/img/picb5.jpg" alt=""></div>
+                            <div class="w-4/5"><img src="dist/img/picb5.jpg" alt=""></div>
                         </li>
                     </ul>
                 </div>
-                <div class="prod-size">
+                <div class="prod-size mt-4">
                     <p>Size: <span></span></p>
                 </div>
-                <div class="prod-size-icon">
-                    <ul class="flex justify-between w-3/4">
+                <div class="prod-size-icon mt-2">
+                    <ul class="flex justify-between w-64">
                         <li><a href="" class="text-blue-500 bg-gray-200 w-10 h-10 flex justify-center items-center">XS</a></li>
                         <li><a href="" class="text-blue-500 bg-gray-200 w-10 h-10 flex justify-center items-center">S</a></li>
                         <li><a href="" class="text-blue-500 bg-gray-200 w-10 h-10 flex justify-center items-center">M</a></li>
@@ -99,17 +99,17 @@
                 <hr class="mt-10">
                 <p class="mt-4 text-lg" >Quantity:</p>
                 <div class="quantity-wrap flex mt-4">
-                    <ul class="quantity-input border border-solid border-gray-700 "><li class="text-blue-500 bg-gray-200 w-12 h-12 flex justify-center items-center">1</li></ul>
-                    <ul class="flex border border-solid border-gray-700 ">
-                        <li class="text-blue-500 bg-gray-200 w-12 h-12 flex justify-center items-center">1</li>
-                        <li class="text-blue-500 bg-gray-200 w-12 h-12 flex justify-center items-center">2</li>
-                        <li class="text-blue-500 bg-gray-200 w-12 h-12 flex justify-center items-center">3</li>
-                        <li class="text-blue-500 bg-gray-200 w-12 h-12 flex justify-center items-center">4</li>
-                        <li class="text-blue-500 bg-gray-200 w-12 h-12 flex justify-center items-center">5</li>
+                    <ul class="quantity-input border border-solid border-gray-700 cursor-pointer"><li class="text-blue-500 bg-gray-200 w-12 h-12 flex justify-center items-center font-bold">1</li></ul>
+                    <ul class="q-choices flex invisible w-0 border border-solid border-gray-700 transition-all ease-in-out duration-500">
+                        <li class="num cursor-pointer text-blue-500 bg-gray-200 transition-all ease-in-out duration-500 opacity-0 w-0 h-12 flex justify-center items-center font-bold">1</li>
+                        <li class="num cursor-pointer text-blue-500 bg-gray-200 transition-all ease-in-out duration-500 opacity-0 w-0 h-12 flex justify-center items-center font-bold">2</li>
+                        <li class="num cursor-pointer text-blue-500 bg-gray-200 transition-all ease-in-out duration-500 opacity-0 w-0 h-12 flex justify-center items-center font-bold">3</li>
+                        <li class="num cursor-pointer text-blue-500 bg-gray-200 transition-all ease-in-out duration-500 opacity-0 w-0 h-12 flex justify-center items-center font-bold">4</li>
+                        <li class="num cursor-pointer text-blue-500 bg-gray-200 transition-all ease-in-out duration-500 opacity-0 w-0 h-12 flex justify-center items-center font-bold">5</li>
                     </ul>
                 </div>
-                <div class="bg-gray-600 text-white font-bold text-2xl text-center mt-4">ADD TO BAG</div>
-                <div class="flex mt-4 font-semibold mb-4">
+                <div class="bg-gray-600 text-white font-bold text-2xl text-center py-2 mt-4">ADD TO BAG</div>
+                <div class="flex mt-4 font-semibold pb-4">
                     <div><img src="dist/img/fb.jpg" alt=""></div>
                     <div class="flex items-center"><p>Share</p></div>
                 </div>
@@ -118,15 +118,15 @@
 
 
         <section>
-            <div class="info-wrap w-2/3">
+            <div class="info-wrap lg:shadow-none shadow-md lg:mx-0 mx-4 lg:w-2/3 w-full">
                 <hr class="mt-8">
-                <div class="info mx-10">
+                <div class="info lg:mx-10 mx-4">
                     <button class="accordion outline-none flex justify-between w-full mt-4">
                         <div class="font-bold text-gray-700"><h2>product details</h2></div>
-                        <span><i class="fas fa-minus"></i></span>
-                        <span class="hidden"><i class="fas fa-plus"></i></span>
+                        <i class="fas fa-minus"></i>
+                        <i class="hidden fas fa-plus"></i>
                     </button>
-                    <div class="panel mx-4 text-gray-700 ml-2">
+                    <div class="panel hidden mx-4 text-gray-700 ml-2">
                         <p>-Soft jersey knit.
                             <br>
                             -Short sleeves.
@@ -137,14 +137,14 @@
                         </p>
                     </div>
                 </div>
-                <div class="info mx-10">
+                <div class="info lg:mx-10 mx-4">
                     <hr class="mt-4">
                     <button class="accordion outline-none flex justify-between w-full mt-4">
                         <div class="font-bold text-gray-700"><h2>fabric & care</h2></div>
-                        <span><i class="fas fa-minus"></i></span>
-                        <span class="hidden"><i class="fas fa-plus"></i></span>
+                        <i class="fas fa-minus"></i>
+                        <i class="hidden fas fa-plus"></i>
                     </button>
-                    <div class="panel mx-4 text-gray-700 ml-2">
+                    <div class="panel hidden mx-4 text-gray-700 ml-2">
                         <p>
                             -Machine wash.
                             <br>
@@ -152,14 +152,14 @@
                         </p>
                     </div>
                 </div>
-                <div class="info mx-10">
+                <div class="info lg:mx-10 mx-4">
                     <hr class="mt-4">
                     <button class="accordion outline-none flex justify-between w-full mt-4">
                         <div class="font-bold text-gray-700"><h2>shipping & returns</h2></div>
-                        <span><i class="fas fa-minus"></i></span>
-                        <span class="hidden"><i class="fas fa-plus"></i></span>
+                        <i class="fas fa-minus"></i>
+                        <i class="hidden fas fa-plus"></i>
                     </button>
-                    <div class="panel mx-4 text-gray-700 ml-2">
+                    <div class="panel hidden mx-4 text-gray-700 ml-2">
                         <p>
                             Shipping
                             <br>
@@ -179,17 +179,17 @@
                         </p>
                         <a class="text-gray-900 bg-gray-300 text-sm" href="">Terms and Conditions</a>
                     </div>  
-                    <hr class="mt-4">
                 </div>
+                <hr class="mt-4">
             </section>
 
             <section class="also-viewed mt-10">
                 <div class="cust-text-wrap flex w-full">
                     <div class="w-1/3 flex items-center"><hr class="w-full"></div>
-                    <div class="w-1/3 text-gray-700 text-3xl font-bold text-center"><h2>CUSTOMERS ALSO VIEWED</h2></div>
+                    <div class="w-1/3 text-gray-700 lg:text-2xl md:text-xl text-sm font-bold text-center"><h2>CUSTOMERS ALSO VIEWED</h2></div>
                     <div class="w-1/3 flex items-center"><hr class="w-full"></div>
                 </div>
-                <div class="images-wrap flex m-4 text-gray-700 text-sm">
+                <div class="slider-cust m-4 text-gray-700 text-sm">
                     <div class="card">
                         <div class="w-11/12"><img class="w-full" src="dist/img/picc1.jpg" alt=""></div>
                         <div class="w-11/12"><p>Kids Graphic Short Sleeve T-shirt</p></div>
@@ -216,7 +216,7 @@
             <section class="related-images">
                 <div class="related-text-wrap flex w-full">
                     <div class="w-2/5 flex items-center"><hr class="w-full"></div>
-                    <div class="w-1/5 text-gray-700 text-3xl font-bold text-center"><h2>RELATED ITEMS</h2></div>
+                    <div class="w-1/5 text-gray-700 lg:text-2xl md:text-xl text-sm font-bold text-center"><h2>RELATED ITEMS</h2></div>
                     <div class="w-2/5 flex items-center"><hr class="w-full"></div>
                 </div>
                 <div class="slider-related-items mt-4">
@@ -318,12 +318,12 @@
             <section class="reviews mt-8">
                 <div class="related-text-wrap flex w-full">
                     <div class="w-45% flex items-center"><hr class="w-full"></div>
-                    <div class="w-10% text-gray-700 text-3xl font-bold text-center"><h2>REVIEWS</h2></div>
+                    <div class="w-10% text-gray-700 lg:text-2xl md:text-xl text-sm font-bold text-center"><h2>REVIEWS</h2></div>
                     <div class="w-45% flex items-center"><hr class="w-full"></div>
                 </div>
                 <div class="cust-rev-wrap mx-8">
-                    <div class="text-2xl font-bold"><h2>Customer Reviews</h2></div>
-                    <div class="star flex justify-between mt-2">
+                    <div class="lg:text-2xl md:text-xl text-md font-bold"><h2>Customer Reviews</h2></div>
+                    <div class="star md:flex block justify-between mt-2">
                         <div class="font-light flex items-center">
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
@@ -333,7 +333,7 @@
                             <div class="ml-2"><p>No reviews yet</p></div>
                             
                         </div>
-                        <div class="bg-blue-800 text-white font-bold px-4 py-2">
+                        <div class="bg-blue-800 text-white font-bold px-4 py-2 text-center md:mt-0 mt-2">
                             <a href="">WRITE A REVIEW</a>
                         </div>
                     </div>
