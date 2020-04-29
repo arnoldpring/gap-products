@@ -21,7 +21,7 @@ $('.slider-main').flickity ({
   friction: 1,
   draggable: false,
   prevNextButtons: false,
-  pageDots: false
+  pageDots: true
 })
 
 $(document).ready(function(){
@@ -87,6 +87,11 @@ $(document).ready(function(){
         getInput();
         // console.log($(this).text());
     });
+
+    $('.size-choice').click(function(e){
+        $('.prod-size .size-text').html($(this).text());
+    });
+
 
 
     })

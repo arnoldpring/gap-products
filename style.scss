@@ -24,6 +24,9 @@ main {
 
 @media only screen and (min-width: '1280px') and (max-width: '1500px') {
     main {
+        .slider-main .flickity-page-dots {
+            display: none;
+            }
         .slider-cust {
             .flickity-button {
                 display: none;
@@ -41,7 +44,10 @@ main {
 }
 
 @media only screen and (min-width: '768px') and (max-width: '1279px') {
-    main {
+    main { 
+        .slider-main .flickity-page-dots {
+        display: none;
+        }
         .slider-cust {
            .card {
                 width: 25%;
@@ -52,5 +58,50 @@ main {
                 width: 25%;
            }
         }
+    }
+}
+
+@media only screen and (min-width: '501px') and (max-width: '767px') {
+    main {
+        .slider-main {
+            width: 80%;
+            margin: 0 auto;
+           
+        }
+        .product {
+            margin-left: 0;
+            margin-right: 0;
+            .prod-info {
+                padding: 0 1rem;
+                margin: 1rem;
+                margin-top: 2rem;
+            }
+        }
+        .slider-nav-wrap {
+            display: none;
+        }
+       
+    }
+}
+
+@media only screen and (min-width: '350px') and (max-width: '500px') {
+    main {
+        .slider-main {
+            width: 100%;
+            margin: 0;
+        }
+        .product {
+            margin-left: 0;
+            margin-right: 0;
+            .prod-info {
+                padding: 0 1rem;
+                margin: 1rem;
+                margin-top: 2rem;
+            }
+        }
+        .slider-nav-wrap {
+            display: none;
+        }
+    
     }
 }
