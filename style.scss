@@ -1,4 +1,12 @@
 main {
+    .quantity-wrap {
+        .b-right-0 {
+            border-right-style: none;
+        }
+        .q-choices {
+            border-left-style: none;
+        }
+    }
     .accordion {
         outline: 0;
     }

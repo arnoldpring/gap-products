@@ -14,65 +14,81 @@
 //     vertical: true
 // }); 
 
+
 $('.slider-main').flickity ({
-    contain: true,
-    selectedAttraction: 1,
-    friction: 1,
-    draggable: false,
-    prevNextButtons: false,
-    pageDots: false
+  contain: true,
+  selectedAttraction: 1,
+  friction: 1,
+  draggable: false,
+  prevNextButtons: false,
+  pageDots: false
 })
 
-var $carousel = $('.slider-main').flickity();
+$(document).ready(function(){
+    var $carousel = $('.slider-main').flickity();
 
-  $('.navpic').on( 'click', function() {
-    var index = $(this).index();
-    $carousel.flickity( 'select', index );
-  });
+      $('.navpic').on( 'click', function() {
+        var index = $(this).index();
+        $carousel.flickity( 'select', index );
+      });
 
-$('.slider-cust').flickity ({
-    contain: true,
-    cellAlign: 'left',
-    draggable: false,
-    prevNextButtons: true,
-    pageDots: false
-})
+    $('.slider-cust').flickity ({
+        contain: true,
+        cellAlign: 'left',
+        draggable: false,
+        prevNextButtons: true,
+        pageDots: false
+    })
 
-$('.slider-related-items').flickity ({
-    contain: true,
-    cellAlign: 'left',
-    pageDots: false,
-    selectedAttraction: 0.13,
-    friction: 0.8
-})
+    $('.slider-related-items').flickity ({
+        contain: true,
+        cellAlign: 'left',
+        pageDots: false,
+        selectedAttraction: 0.13,
+        friction: 0.8
+    })
 
-$('.accordion').click(function(e){
-      var $this = $(this),
-      $parent = $this.parent('.info').find('.panel');
+    $('.accordion').click(function(e){
+          var $this = $(this),
+          $parent = $this.parent('.info').find('.panel');
 
-      $parent.slideToggle('1000','swing');
-      var $icon = $this.find('.fas');
-      if ($icon.hasClass('hidden')) {
-            $icon.toggleClass('hidden');
-      } else {
-            $icon.toggleClass('hidden');
-      }
-  console.log($this);
-  console.log($parent);
+          $parent.slideToggle('1000','swing');
+          var $icon = $this.find('.fas');
+          if ($icon.hasClass('hidden')) {
+                $icon.toggleClass('hidden');
+          } else {
+                $icon.toggleClass('hidden');
+          }
+      console.log($this);
+      console.log($parent);
 
-})
+    });
 
-$('.quantity-input').click(function(e){
-      var $this = $(this),
-      $parent = $this.parent('.quantity-wrap').find('.q-choices');
-      $child = $parent.find('.num')
-      $parent.toggleClass('invisible');
-      $parent.toggleClass('w-0');
-      $parent.toggleClass('w-48');
-      $child.toggleClass('w-0');
-      $child.toggleClass('w-12');
-      $child.toggleClass('opacity-0');
-      $child.toggleClass('opacity-100');
-      // $parent.animate({width: '12rem'});
+    $('.quantity-input').click(getInput);
 
-})
+    function getInput(){
+            var $qChoices = $('.quantity-input').parent('.quantity-wrap').find('.q-choices');
+            $qChoicesNum = $qChoices.find('.num');
+            $qChoices.toggleClass('invisible');
+            $('.quantity-input').toggleClass('b-right-0');
+            $qChoices.toggleClass('w-0');
+            $qChoices.toggleClass('w-48');
+            $qChoicesNum.toggleClass('w-0');
+            $qChoicesNum.toggleClass('w-12');
+            $qChoicesNum.toggleClass('opacity-0');
+            $qChoicesNum.toggleClass('opacity-100');
+            // $parent.animate({width: '12rem'});
+            // console.log($this).val();
+      };
+
+    $(".num").click(function(e) {
+        // var text = $(this).text(); 
+        $(".quantity-input .q-val").html($(this).text());
+        getInput();
+        // console.log($(this).text());
+    });
+
+
+    })
+
+   

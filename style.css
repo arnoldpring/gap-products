@@ -1,3 +1,7 @@
+main .quantity-wrap .b-right-0 {
+  border-right-style: none; }
+main .quantity-wrap .q-choices {
+  border-left-style: none; }
 main .accordion {
   outline: 0; }
 main .slider-related-items .card {
